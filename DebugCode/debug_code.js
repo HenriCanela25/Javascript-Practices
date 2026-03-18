@@ -4,6 +4,8 @@ function performOperation() {
 
     if (!isNaN(num1) && !isNaN(num2)) {
         let result = multiply(num1, num2);
+        let result2 = division(num1, num2);
+        let result3 = addition(num1, num2);
         displayResult(result);
     } else {
         displayResult('Please enter valid numbers');
@@ -13,6 +15,14 @@ function performOperation() {
 function multiply(a, b) {
     debugger;
     return a * b;
+}
+
+function division(a, b) {
+    return a / b;
+}
+
+function addition(a, b) {
+    return a + b;
 }
 
 function displayResult(result){
